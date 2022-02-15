@@ -22,5 +22,9 @@ const App = () => {
 
   return el;
 };
+const name = 'Brian'
+const surName = "May"
+
+console.log(name)
 
 export default App;
