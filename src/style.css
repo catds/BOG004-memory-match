@@ -1,0 +1,40 @@
+body{
+    background-image: url("../studio-ghibli.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor-cards
+{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+
+    display: grid;
+    grid-template-columns: 3fr;
+    gap: 20px;
+}
+
+.card
+{
+    border-radius: 10px;
+    min-height: 200px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center-center;
+}
+
+@media screen and (max-widht: 900px){
+
+}
+
+@media screen and (max-widht: 700px){
+
+}
+
+@media screen and (max-widht: 600px){
+
+}

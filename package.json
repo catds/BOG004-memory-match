@@ -8,18 +8,13 @@
     "pretest": "eslint .",
     "test": "jest --coverage",
     "start": "serve -s src/",
-    "deploy": "gh-pages -d src",
-    "lint": "eslint .",
-    "lint:flix": "eslint --flix ."
+    "deploy": "gh-pages -d src"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/plugin-transform-modules-commonjs": "^7.14.0",
-    "babel-eslint": "^10.1.0",
     "babel-jest": "^27.0.1",
     "eslint": "^8.9.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.4",
     "gh-pages": "^3.2.0",
     "jest": "^27.0.1",
     "serve": "^13.0.2"
