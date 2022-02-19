@@ -17,7 +17,7 @@ console.log(ghibli);
 const crearCard = (itemPelicula) => {
   const card = document.createElement('div');
   card.className = "card"
-  const contenido = <img src="${data.itemPelicula.image}"></img>
+  const contenido = `<img src="${itemPelicula.image}">`
   card.innerHTML = contenido;
   const contenedor = document.getElementById("contenedor-cards").appendChild(card)
   //card.className = 'App';

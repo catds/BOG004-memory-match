@@ -1,14 +1,14 @@
 export default {
   name: 'ghibli',
   items: [
-    { id: 'totoro', image: 'https://www.wallpapertip.com/wmimgs/28-284824_my-neighbor-totoro-aesthetic.jpg', bgColor: '#339933', class: 'card' },
-    { id: 'chihiro', image: 'https://w0.peakpx.com/wallpaper/686/472/HD-wallpaper-spirited-away-anime-chihiro-ghibli-studio-ghibli.jpg', bgColor: '#339933', class: 'card'  },
-    { id: 'castillo', image: 'https://www.wallpapertip.com/wmimgs/28-284828_howls-moving-castle-phone-background.jpg', bgColor: '#339933', class: 'card'  },
-    { id: 'charmander', image: 'https://r1.ilikewallpaper.net/iphone-wallpapers/download/87815/Studio-Ghibli-Phone-iphone-wallpaper-ilikewallpaper_com_200.jpg', bgColor: '#F05032', class: 'card'  },
-    { id: 'avion', image: 'https://w0.peakpx.com/wallpaper/373/996/HD-wallpaper-ghibli-anime-studio-ghibli.jpg', bgColor: '#F05032', class: 'card'  },
-    { id: 'bruja', image: 'https://i.pinimg.com/564x/d4/c0/2f/d4c02f84637b156fd90e1d20ac434892.jpg', bgColor: '#F05032', class: 'card'  },
-    { id: 'miyazaki', image: 'http://static.boredpanda.es/blog/wp-content/uploads/2016/01/fondos-pantalla-anime-75-cumpleanos-miyazaki-13.jpg', bgColor: '#1572B6', class: 'card'  },
-    { id: 'wartortle', image: 'http://static.boredpanda.es/blog/wp-content/uploads/2016/06/descarga-fondos-pantalla-smartphone-gratis-ghibli-aniversario-5.jpg', bgColor: '#1572B6', class: 'card'  },
-    { id: 'nausicaa', image: 'https://i.pinimg.com/564x/72/ed/7d/72ed7d3abfe1505248769815f777ce99.jpg', bgColor: '#1572B6', class: 'card'  },
+    { id: 'totoro', image: 'https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg', bgColor: '#339933', class: 'card' },
+    { id: 'chihiro', image: 'https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Spirited_Away.png', bgColor: '#339933', class: 'card'  },
+    { id: 'castillo', image: 'https://static.wikia.nocookie.net/studio-ghibli/images/0/08/Howl%27s_Moving_Castle.jpg', bgColor: '#339933', class: 'card'  },
+    { id: 'luciernagas', image: 'https://static.wikia.nocookie.net/studio-ghibli/images/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg', bgColor: '#F05032', class: 'card'  },
+    { id: 'avion', image: 'https://static.wikia.nocookie.net/studio-ghibli/images/2/2d/The_Wind_Rises.jpg', bgColor: '#F05032', class: 'card'  },
+    { id: 'bruja', image: 'https://static.wikia.nocookie.net/studio-ghibli/images/4/48/Kiki%27s_Delivery_Service_%282%29.jpg', bgColor: '#F05032', class: 'card'  },
+    { id: 'porco', image: 'https://static.wikia.nocookie.net/studio-ghibli/images/4/41/Porco_Rosso.jpg', bgColor: '#1572B6', class: 'card'  },
+    { id: 'princesa', image: 'https://static.wikia.nocookie.net/studio-ghibli/images/8/87/The_Tale_of_the_Princess_Kaguya.jpg', bgColor: '#1572B6', class: 'card'  },
+    { id: 'ayer', image: 'https://static.wikia.nocookie.net/studio-ghibli/images/a/a9/Only_Yesterday.jpg', bgColor: '#1572B6', class: 'card'  },
   ],
 };

@@ -2,39 +2,53 @@ body{
     background-image: url("../studio-ghibli.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 
 .contenedor-cards
 {
     width: 90%;
-    max-width: 1200px;
+    max-width: 90%;
     margin: auto;
-    padding: 40px 0;
+    padding: auto;
+    border-style: groove;
 
     display: grid;
-    grid-template-columns: 3fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
 }
 
 .card
 {
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-style: groove;
     min-height: 200px;
-    padding: 20px;
+    padding: 30px 30px 30px 30px ;
+    height: 275px;
+    width: 200px;
     position: relative;
     overflow: hidden;
     background-size: cover;
     background-position: center-center;
+    object-fit: contain;
+
+    display: inline-block;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-rows: max-content; */
+    gap: 20px;
 }
 
-@media screen and (max-widht: 900px){
+
+@media screen and (max-widht: 1024px){
 
 }
 
-@media screen and (max-widht: 700px){
+@media screen and (max-widht: 768px){
 
 }
 
-@media screen and (max-widht: 600px){
+@media screen and (max-widht: 480px){
 
 }
