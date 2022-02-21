@@ -52,15 +52,15 @@ for(let i=1; i<=2; i++){
 // }
 // console.log(frutas)
 
-const mix = [itemPelicula.image];
-for(let i = itemPelicula.image.length - 1; i > 0; i--){
+const mix = [ghibli];
+for(let i = ghibli.length - 1; i > 0; i--){
   const randomIndex = Math.floor(Math.random() * (i + 1));
-  const copia = itemPelicula.image[i];
-  itemPelicula.image[i] = itemPelicula.image[randomIndex]
-  itemPelicula.image[randomIndex] = copia
+  const copia = ghibli[i];
+  ghibli[i] = ghibli[randomIndex]
+  ghibli[randomIndex] = copia
 }
 
-console.log(itemPelicula.image)
+console.log(ghibli)
 
 
 export default App;
