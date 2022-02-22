@@ -24,7 +24,7 @@ const crearCard = (itemPelicula) => {
   //card.textContent = card;
 
 
-  //return card;
+  
 
 
 /*const App = () => {
