@@ -5,6 +5,7 @@
   card.innerHTML = contenido;
   const contenedor = document.getElementById("contenedor-cards").appendChild(card)
 
+
 };*/
 //llamar la funcion para que funcione
 // import dataTarjetas";
