@@ -1,15 +1,17 @@
-/*const crearCard = (itemPelicula) => {
-  const card = document.createElement('div');
-  card.className = "card"
-  const contenido = `<img src="${itemPelicula.image}">`
-  card.innerHTML = contenido;
-  const contenedor = document.getElementById("contenedor-cards").appendChild(card)
-
-};*/
-//llamar la funcion para que funcione
-// import dataTarjetas";
+// import dataTarjetas from "..main"
 
 const App = (data) => {
+
+  const randomize = () => {
+    const dataTarjetas = data;
+    const dataMix = [dataTarjetas];
+    dataTarjetas
+    dataTarjetas.sort(() => Math.random() - 0.5)
+    return dataTarjetas
+    // console.log(dataTarjetas);
+  };
+  randomize();
+
   for (let i = 1; i <= 2; i++) {
     data.forEach((elemento) => {
       const card = document.createElement("div");
@@ -20,20 +22,20 @@ const App = (data) => {
     });
   }
 
-  //crear una variable global para guardar y poder
-const card = elemento.image;
-    const mix = [card.items];
-    console.log(mix)
-    for(let i = mix.length - 1; i > 0; i--){
-      const randomIndex = Math.floor(Math.random() * (i + 1));
-      const copia = mix[i];
-      mix[i] = mix[randomIndex]
-      mix[randomIndex] = copia
-    }
-    console.log(mix)
-    return card
-  };
 
+  // console.log(dataMix);
+  // for (let i = dataMix.length - 1; i > 0; i--) {
+  //   const randomIndex = Math.floor(Math.random() * (i + 1));
+  //   const copia = dataMix[i];
+  //   dataMix[i] = dataMix[randomIndex];
+  //   dataMix[randomIndex] = copia;
+  // }
+  // console.log(dataMix);
+  // return dataMix;
+
+
+
+};
 
 // const frutas = ['🍍','🍎','🍊','🍎','🍊','🍎','🍊','🍋','🍓','🍒','🍍'];
 // for(let i = frutas.length - 1; i > 0; i--){
@@ -45,20 +47,3 @@ const card = elemento.image;
 // console.log(frutas)
 
 export default App;
-//src="${itemPelicula.img}"
-// `<p>${itemPelicula.id}</p>`
-// `<src="${itemPelicula.img}">`
-
-// for (variable:arreglo)
-// {
-// imprima (nombre[i])
-// i++
-// }
-
-//Ejemplo aprenderaprogramar.com
-
-//public void listarTodosLosNombres () {
-//for (String i: listaDeNombres) {
-//System.out.println (i); //Muestra cada uno de los nombres dentro de listaDeNombres
-//}
-//}
