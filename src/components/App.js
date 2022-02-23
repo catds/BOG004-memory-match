@@ -1,4 +1,5 @@
 
+
 const App = (data) => {
 
   const randomize = () => {
@@ -19,27 +20,5 @@ const App = (data) => {
       document.getElementById("contenedor-cards").appendChild(card);
     });
   // }
-
-
-  // console.log(dataMix);
-  // for (let i = dataTarjetas.length - 1; i > 0; i--) {
-  //   const randomIndex = Math.floor(Math.random() * (i + 1));
-  //   const copia = dataTarjetas[i];
-  //   dataTarjetas[i] = dataTarjetas[randomIndex];
-  //   dataTarjetas[randomIndex] = copia;
-  // }
-  // console.log(dataMix);
-  // return dataMix;
-
-};
-
-// const frutas = ['🍍','🍎','🍊','🍎','🍊','🍎','🍊','🍋','🍓','🍒','🍍'];
-// for(let i = frutas.length - 1; i > 0; i--){
-//   const randomIndex = Math.floor(Math.random() * (i + 1));
-//   const copia = frutas[i];
-//   frutas[i] = frutas[randomIndex]
-//   frutas[randomIndex] = copia
-// }
-// console.log(frutas)
 
 export default App;
