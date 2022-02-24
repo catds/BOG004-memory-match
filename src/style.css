@@ -10,113 +10,70 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    display: flex
 }
 
 .contenedor-cards
 {
-    /* width: 100%; */
     width: fit-content;
-    /* max-width:1180px; */
     padding: auto;
+    padding-top: 3%;
     margin: auto;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(6, 1fr);
-    /* grid-template-rows: repeat(6, 1fr); */
-    height: 100vh;
+    height: 92vh;
     border-style: none;
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
     object-fit: contain;
+    perspective: 800px;
 }
 
 .card
 {
-    background-color: aliceblue;
-    padding: 1px;
+    padding: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    border-color: orange;
-    /* border: 2px; */
+
     border-style: solid;
-    /* box-shadow: 1px 1px 1px 1px; */
-    /* box-sizing: content-box; */
-    /* box-sizing: border-box; */
-    /* padding: 10px 10px 10px 10px ; */
     position: relative;
     overflow: hidden;
-    /* background-size: cover; */
     background-position: center-center;
     object-fit: contain;
-    /* display: display box; */
     gap: 20px;
     animation-name: giro;
     animation-duration: 2s;
-    /* transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg); */
+    transform: preserve-3d;
+    transition: all 2s cubic-bezier();
+    transform: rotateY(0deg);
+
 }
 
-@keyframes giro
-{
-    from{rotate:Y(0deg);}
-    to{rotate:Y(180deg);}
+.face {
+    background-color: aqua;
 }
-
- @media screen and (max-widht: 768px){
-    .contenedor-cards
-    {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: 1fr 1fr;
-    }
-    .contenedor-cards
-{
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
-    display: grid;
-    gap: 20px;
-     grid-template-columns: repeat(3, 1fr);
-     grid-template-rows: repeat(5, 1fr);
-    box-sizing: content-box;
-    height: 94vh;
-    border-style: groove;
-}
-
-.card
-{
+.back {
     width: 100%;
-    grid-area: card card card;
-     background-color: aliceblue;
-    padding: 20px;
-     display: flex;
-     align-items: center;
-     justify-content: center; 
-    border-radius: 10px;
-    border-style: groove;
-    box-sizing: border-box;
-     padding: 10px 10px 10px 10px ;
-    height: 275px;
-     width: 200px; 
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center-center;
-    object-fit: contain;
-
-    display: inline-block;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: max-content;
-    gap: 20px;
+    height: 100%;
+    padding: 0px;
+    background-color: orange;
+    position: absolute;
+    
 }
+.backhidden{
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background-color: orange;
+    position: absolute;
 }
 
- @media screen and (max-widht: 480px){
 
- }
+/* @media screen and (max-widht: 480px){
+
+ } */
