@@ -1,6 +1,6 @@
 
 
-const App = (data) => {
+const App = (data = []) => {
 
   const randomize = () => {
     const dataTarjetas = data;
@@ -15,6 +15,7 @@ const App = (data) => {
       const back = document.createElement("div"); 
       card.className = "card";
       back.className = "back";
+
       const contenido = `<img src="${elemento.image}">`;
       card.innerHTML = contenido;
       card.addEventListener("click",()=>{
@@ -22,10 +23,10 @@ const App = (data) => {
       })
       card.appendChild(back);
       document.getElementById("contenedor-cards").appendChild(card);
-  
-      
-      
+       
     });
+   
+   // return document.getElementById("contenedor-cards");
 }
 
 export default App;
