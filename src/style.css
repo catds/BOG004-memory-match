@@ -26,7 +26,7 @@ body
     border-style: none;
     box-sizing: border-box;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
     object-fit: contain;
     perspective: 800px;
 }
@@ -75,5 +75,30 @@ body
 
 
 /* @media screen and (max-widht: 480px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    color: orange;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-position: center-center;
+    object-fit: contain;
+    gap: 20px;
+    transform: preserve-3d;
+    transition: all 2s cubic-bezier();
+    transform: rotateY(180deg);
+}
 
+/* /* @keyframes giro
+{
+    from{rotate:Y(0deg);}
+    to{rotate:Y(180deg);}
+}
+
+@media screen and (max-widht: 768px){}
+
+
+@media screen and (max-widht: 480px){
  } */

@@ -16,15 +16,16 @@ const App = (data) => {
       card.className = "card";
       back.className = "back";
       const contenido = `<img src="${elemento.image}">`;
+      const colorBack = back;
       card.innerHTML = contenido;
       card.addEventListener("click",()=>{
         back.classList.toggle("backhidden")
       })
       card.appendChild(back);
       document.getElementById("contenedor-cards").appendChild(card);
-  
-      
-      
+      back.innerHTML = colorBack;
+      document.getElementById("contenedor-cards").appendChild(card);
+      card.appendChild(back);
     });
 }
 
