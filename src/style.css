@@ -50,12 +50,9 @@ body
     transform: preserve-3d;
     transition: all 2s cubic-bezier();
     transform: rotateY(0deg);
-
 }
 
-.face {
-    background-color: aqua;
-}
+
 .back {
     width: 100%;
     height: 100%;
