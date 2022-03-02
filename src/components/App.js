@@ -25,7 +25,7 @@ const App = (data) => {
       checkCards(e);
       // console.log(1,e.target)
       })
-//borrar posicion 0 y 1 y reiniciar. borrar o un ciclo(?). Agregar siempre el alt. No spanglish
+//borrar posicion 0 y 1 y reiniciar. borrar o un ciclo(?) intenta con un for                                                                                                                                                                                    . Agregar siempre el alt. No spanglish
 
 
       card.appendChild(back);
@@ -38,16 +38,23 @@ const App = (data) => {
         clickedCard.classList.add("toggle");
         console.log(toggleCards.length)
         console.log(e.target)
-        if(toggleCards.length===2){
-          if(toggleCards[0].getAttribute('name')===toggleCards[1].getAttribute('name'))
-          {
-            console.log(toggleCards[0].getAttribute('name'))
-            console.log("match");
-          } else{
-            console.log(toggleCards[0].getAttribute('name'))
-            console.log("noMatch")
+        // for (let i = 0; i = 1; i++){
+          if(toggleCards.length===2){
+            if(toggleCards[0].getAttribute('name')===toggleCards[1].getAttribute('name'))
+            {
+              // console.log(toggleCards[0].getAttribute('name'))
+              toggleCards.style.pointerEvents = 'none';
+              console.log("match");
+            } else{
+              // console.log(toggleCards[0].getAttribute('name'))
+              console.log("noMatch")
+              toggleCards.forEach((card) => {
+                clickedCard.classList.remove("toggle");
+              })
+            }
           }
-        }
+        // };
+
 
       }
 
