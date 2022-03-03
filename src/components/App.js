@@ -15,7 +15,6 @@ const App = (data = []) => {
     data.forEach((elemento) => {
       const card = document.createElement("div");
       const back = document.createElement("div");
-      // const duplicarCartas = document.createElement("div")   
       card.className = "card";
       back.className = "back";
       back.setAttribute('name', elemento.name)
@@ -24,7 +23,7 @@ const App = (data = []) => {
       card.addEventListener("click",(e)=>{
       back.classList.toggle("backhidden")
       checkCards(e);
-      // duplicarCartas();
+      
       // console.log(1,e.target)
       })
 //borrar posicion 0 y 1 y reiniciar. borrar o un ciclo(?). Agregar siempre el alt. No spanglish
@@ -45,8 +44,12 @@ const App = (data = []) => {
           {
             console.log(toggleCards[0].getAttribute('name'))
             console.log("match");
+            toggleCards=[]
           } else{
-            console.log(toggleCards[0].getAttribute('name'))
+            toggleCards[0].classList.toggle("backhidden")
+            toggleCards[1].classList.toggle("backhidden")
+            toggleCards=[]
+
             console.log("noMatch")
           }
         }
