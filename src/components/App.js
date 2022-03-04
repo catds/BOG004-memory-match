@@ -48,7 +48,7 @@ const App = (data = []) => {
           } else{
             toggleCards[0].classList.toggle("backhidden")
             toggleCards[1].classList.toggle("backhidden")
-            toggleCards=[]
+            toggleCards=[ ]
 
             console.log("noMatch")
           }
