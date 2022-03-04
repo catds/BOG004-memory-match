@@ -1,5 +1,4 @@
-/**
- * @jest-environment jsdom
+/*** @jest-environment jsdom
  */
 
 import App from './App.js';
