@@ -24,7 +24,8 @@ describe('App', () => {
   });
 
   it('deberia hacer el match de las tarjetas', () => {
-    document.getElementById('iniciar juego').addEventListener('click',iniciarJuego)
-    expect(true).toBe(true)
+    const toggleCards = (toggleCards[0].getAttribute('name')===toggleCards[1].getAttribute('name'))
+
+    expect(toggleCards).toEqual([0],[1])
   })
 });
