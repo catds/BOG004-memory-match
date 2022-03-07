@@ -11,7 +11,7 @@ describe('App', () => {
     expect(true).toBe(true);
   });
 
-  it('should render 1 cards por elemento del array', () => {
+  it('should render 1 cards by each array element', () => {
     document.body.innerHTML= '<div id="contenedor-cards"></div>'
     App([
       {
@@ -22,4 +22,9 @@ describe('App', () => {
     const cards = document.getElementById("contenedor-cards").querySelectorAll('.card');
     expect(cards.length).toBe(1);
   });
+
+//   it('should play when user click on play button', () => {
+//     document.getElementById('iniciar juego').addEventListener('click',iniciarJuego)
+//     expect(true).toBe(true)
+//   })
 });

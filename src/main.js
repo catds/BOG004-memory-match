@@ -10,9 +10,16 @@ document.getElementById('contenedor-cards').style.display = 'none';
 function iniciarJuego() {
     document.getElementById('contenedor-cards').style.display = 'grid';
     document.getElementById('contenedor-bienvenida').style.display = 'none';
-    
+
   }
   document.getElementById('iniciar juego').addEventListener('click',iniciarJuego)
+
+  function reiniciar(){
+    // document.getElementById('contenedor-cards').style.display = 'none';
+    // document.getElementById('contenedor-bienvenida').style.display = 'none';
+    document.getElementById('felicitaciones').style.display = 'flexbox';
+  }
+  document.getElementById('felicitaciones').addEventListener('click',felicitaciones) //como hacer que el escuchador se active cuando todas las cartas hagan match
 
 App(dataTarjetas);
 
