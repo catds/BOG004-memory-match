@@ -1,4 +1,4 @@
-
+import volverAJugar from "../main.js"
 
 const App = (data = []) => {
 
@@ -21,7 +21,7 @@ const App = (data = []) => {
       const contenido = `<img src="${elemento.image}">`;
       card.innerHTML = contenido;
       card.addEventListener("click",(e)=>{
-      back.classList.toggle("backhidden")
+      back.classList.toggle("cardHidden")
       checkCards(e);
       
       // console.log(1,e.target)
@@ -50,17 +50,16 @@ const App = (data = []) => {
             contador ++;
             console.log(contador)
           } else{
-            toggleCards[0].classList.toggle("backhidden")
-            toggleCards[1].classList.toggle("backhidden")
-            toggleCards=[ ]
+            toggleCards[0].classList.toggle("cardHidden")
+            toggleCards[1].classList.toggle("cardHidden")
+            toggleCards=[]
 
             console.log("noMatch")
           }
         }
         if (contador == 1){
-          return reiniciar;
-          // document.getElementById('felicitaciones').style.display = 'block';
-          // document.getElementById('reiniciar').addEventListener('click',reiniciar)
+          volverAJugar.volverAJugar();
+          // toggleCards=[].classList.toggle("cardHidden")
         }
       }
 
