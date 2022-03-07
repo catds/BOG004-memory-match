@@ -34,6 +34,8 @@ const App = (data = []) => {
       const checkCards = (e) => {
         const clickedCard = e.target
 
+      let contador = 0;
+
         toggleCards.push(clickedCard)
         // const toggleCards = document.querySelectorAll('.toggle');
         clickedCard.classList.add("toggle");
@@ -45,6 +47,8 @@ const App = (data = []) => {
             console.log(toggleCards[0].getAttribute('name'))
             console.log("match");
             toggleCards=[]
+            contador ++;
+            console.log(contador)
           } else{
             toggleCards[0].classList.toggle("backhidden")
             toggleCards[1].classList.toggle("backhidden")
@@ -53,7 +57,11 @@ const App = (data = []) => {
             console.log("noMatch")
           }
         }
-
+        if (contador == 1){
+          return reiniciar;
+          // document.getElementById('felicitaciones').style.display = 'block';
+          // document.getElementById('reiniciar').addEventListener('click',reiniciar)
+        }
       }
 
     });
