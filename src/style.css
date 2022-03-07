@@ -77,12 +77,13 @@
         padding: 40px;
         padding-top: 3%;
         display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        grid-auto-rows: 15rem;
+        grid-template-columns: repeat(auto-fill, minmax(12rem,1fr));
         height: 100vh;
         border-style: none;
         box-sizing: border-box;
-        overflow: hidden;
+        overflow: visible;
         background-color: rgb(14, 65, 65) ;
         object-fit: contain;
     }
@@ -121,25 +122,5 @@
     }
 
 
-@media (max-widht: 768px){
-    .contenedor-cards
-{
-    /* display: grid; */
-    /* gap: 10px; */
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row: auto;
-}
-}
-
-@media (max-widht: 1080px) {
-    .contenedor-cards
-    {
-        /* display: grid; */
-        /* gap: 10px; */
-        grid-template-columns: 1fr 1fr;
-        grid-row: auto;
-    }
-
-}
 
 
