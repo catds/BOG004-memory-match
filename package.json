@@ -11,12 +11,12 @@
     "deploy": "gh-pages -d src"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.3",
+    "@babel/core": "^7.17.5",
     "@babel/plugin-transform-modules-commonjs": "^7.14.0",
-    "babel-jest": "^27.0.1",
+    "babel-jest": "^27.5.1",
     "eslint": "^8.9.0",
     "gh-pages": "^3.2.0",
-    "jest": "^27.0.1",
+    "jest": "^27.5.1",
     "serve": "^13.0.2"
   },
   "engines": {
@@ -24,5 +24,22 @@
   },
   "jest": {
     "testEnvironment": "jsdom"
-  }
+    
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catds/BOG004-memory-match.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/catds/BOG004-memory-match/issues"
+  },
+  "homepage": "https://github.com/catds/BOG004-memory-match#readme"
 }

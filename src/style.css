@@ -66,17 +66,18 @@
     {
         width: 100%;
         padding: 43px;
-        padding-top: 1%;
+        padding-top: 2.2%;
         display: grid;
         gap: 1rem;
-        grid-auto-rows: 12rem;
-        grid-template-columns: repeat(auto-fill, minmax(12rem,1fr));
+        grid-auto-rows: 3fr;
+        grid-template-columns: repeat(auto-fill, minmax(18rem,1fr));
         grid-row-gap: 5px;
         border-style: none;
         box-sizing: border-box;
         overflow: visible;
         background-color: rgb(14, 65, 65) ;
         object-fit: contain;
+        /* height: height; */
     }
     
     .card
@@ -129,13 +130,19 @@
     align-items: center;
     justify-content: space-around;
     border-radius: 20px;
-    font-size: larger;
+    font-size: 200%;
  }
 
  .felicitaciones button{
      display: flex;
      align-items: center;
      justify-content: center;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
  }
+ 
 
 
