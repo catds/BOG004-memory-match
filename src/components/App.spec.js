@@ -11,7 +11,7 @@ describe("App", () => {
     expect(App()).toBe();
   });
 
-  xit("deberia mostrar una carta por cada elemento del array", () => {
+  it("deberia mostrar una carta por cada elemento del array", () => {
     document.body.innerHTML = '<div id="contenedor-cards"></div>';
     App([
       {

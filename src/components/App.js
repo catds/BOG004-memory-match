@@ -40,10 +40,7 @@ const App = (data = []) => {
       // console.log(toggleCards.length)
       // console.log(e.target)
       if (toggleCards.length === 2) {
-        if (
-          toggleCards[0].getAttribute("name") ===
-          toggleCards[1].getAttribute("name")
-        ) {
+        if (toggleCards[0].getAttribute("name") === toggleCards[1].getAttribute("name")) {
           // console.log(toggleCards[0].getAttribute('name'))
           // console.log("match");
           toggleCards = [];
